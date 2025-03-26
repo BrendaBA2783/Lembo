@@ -1,0 +1,242 @@
+/* Variables */
+:root {
+    /* Primary color */ 
+    --primary_green_900: #4BBD17;
+    --primary_blue_100: #00304D;
+
+    /* Secundary color */
+    --secundary_green_200: #C9E8B9;
+    --secundary_green_950: #39A900;
+
+    /* Basic color */
+    --white: #ffffff;
+    --black: #000000;
+    --gray_40: #c5c5c5;
+    --gray_20: #f6f6f6;
+}
+
+/* Estilo global */
+* {
+    text-decoration: none;
+}
+a {
+    color: var(--black);
+}
+
+/* Hack rem */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/* Estilos del body */
+body {
+    font-size: 1.6rem;
+    font-family: "Work Sans", "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(var(--white), var(--gray_20), var(--gray_40)) no-repeat;
+    background-attachment: fixed;
+}
+
+/* Headings */
+h1 {font-size: 3.2rem;} h2 {font-size: 2.4rem;} h3 {font-size: 2.0rem;} h4 {font-size: 1.6rem;}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: 0.4rem solid var(--primary_green_900);
+}
+.hero img {
+    width: 10rem;
+    height: 10rem;
+}
+.hero h1 {
+    color: var(--primary_blue_100);
+}
+
+/* User */
+.user {
+    display: flex;
+    gap: 2.4rem;
+}
+.user img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 6rem;
+}
+.user h3 {
+    margin-left: 1.3rem;
+    margin-top: 0.4rem;
+}
+.user h2 {
+    margin-top:3rem;
+}
+.title_table {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+.title_table .title {
+    display: flex;
+    align-items: center;
+}
+
+/* Search */
+.buscar {
+    display: flex;
+    position: relative;
+    justify-content: end;
+}
+.buscar img {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+}
+.buscar input {
+    width: 36rem;
+    height: auto;
+    padding: 1rem;
+}
+
+/* Opciones de la tabla */
+.opciones_tabla {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end;
+    margin-top: 2rem;
+}
+.opciones_tabla h4 img {
+    width: 1rem;
+    height: 1rem;
+}
+.opciones_tabla img {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Main */
+main {
+    margin-bottom: 4rem;
+}
+.sombra_superior {
+    box-shadow: inset 1px 4px 6px 2px #14141433;
+}
+.sombras_inferior {
+    box-shadow: inset -1px -14px 33px -21px rgba(0,0,0,0.75);
+}
+.filas {
+    display: flex;
+    justify-content: center;
+}
+.filas div {
+    border: 0.1rem solid var(--black);
+    width: 27rem;
+    text-align: center;
+    background-color: var(--white);
+    border-top: none;
+}
+.filas .campo_id {
+    border-left: none;
+}
+.filas .campo_imagen {
+    border-right: none;
+}
+
+.filas_vacias {
+    display: flex;
+    justify-content: center;
+}
+.filas_vacias .campo {
+    border: 0.1rem solid var(--black);
+    width: 27rem;
+    height: auto;
+    padding: 3rem;
+    background-color: var(--white);
+    border-bottom: none;
+}
+.filas_vacias .campo_vacio_id {
+    border-left: none;
+}
+.filas_vacias .campo_vacio_imagen {
+    border-right: none;
+}
+
+/* Botones */
+button {
+    width: 32rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--primary_green_900);
+    color: var(--white);
+    font-weight: bold;
+    border-bottom: 0.5rem solid var(--white);
+}
+.button_end {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 4rem;
+    margin-right: 0%;
+    gap: 2rem;
+}
+button:hover {
+    box-shadow: 0 0.3rem 1rem var(--primary_blue_100);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .button_end {
+        display: flex;
+        justify-content: center;
+    }
+    /* .title_table {
+        gap: 40rem;
+    } */
+}
+@media (max-width: 400px) {
+    /* .title_table {
+        gap: 8rem;
+    } */
+    .opciones_tabla {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        column-gap: 2rem;
+    }
+}
+@media (width: 720px) {
+    /* .title_table {
+        gap: 35rem;
+    } */
+}
+@media (max-width: 719px) {
+    .button_end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1920px) {
+    /* .title_table .title {
+        margin-left: 24rem;
+    } */
+    .buscar,
+    .opciones_tabla {
+        margin-right: 8rem;
+    }
+    .button_end {
+        margin-right: 8rem;
+    }
+}
+@media (width: 1440px) {
+    /* .title_table .title {
+        margin-left: 6rem;
+    } */
+}

@@ -1,0 +1,121 @@
+:root {
+
+    /* Primary color */
+    --green_950: #39a900;
+    --green_900: #4bbd17; 
+    --green_50: #5dd12e ;
+
+    /* Bordes */
+    --border-color: #4bbd17 ;
+    --border-width: 0.2rem;
+    --border-style: solid; 
+
+    /* Secundary color */
+    --secundary-blue-100: #00304d ; 
+
+    /* Basic color */
+    --white: #FFF;
+    --black: #000; 
+    --gray-20: #f6f6f6 ;
+    --gray-40: #c5c5c5;
+    --gray-50: #E9E9E9;
+
+    /* Font */
+    --main-font: Helvetica, Arial, sans-serif;
+
+}
+/* Globales */
+* {
+    text-decoration: none;
+}
+a {
+    color: var(--black);
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--white), var(--gray-20) ,var(--gray-40));
+    margin: 0;
+    background-attachment: fixed;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    border-bottom: 0.4rem solid var(--green_900);
+}
+.hero__logo {
+    width: 10rem;
+    height: 10rem;
+}
+.hero__title {
+    color: var(--primary_blue_100);
+}
+
+/* User */
+.user {
+    display: flex;
+    gap: 2.4rem;
+}
+.user__image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 6rem;
+}
+.user__menu-title {
+    margin-left: 1.3rem;
+    margin-top: 0.4rem;
+}
+.user__name {
+    margin-top:3rem;
+}
+
+/* Container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    height: auto;
+    padding: 6rem;
+    width: 50%;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 15px 0px var(--border-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container__text {
+    text-align: center;
+    font-weight: normal;
+}
+.container__button {
+    width: 32rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--green_900);
+    color: var(--white);
+    font-weight: bold;
+}
+.container__button:hover {
+    box-shadow: 0 0.3rem 1rem var(--secundary-blue-100);
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+    .container {
+        width: 60%;
+    }
+}
