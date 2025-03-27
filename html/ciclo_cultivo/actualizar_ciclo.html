@@ -10,68 +10,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../../components/js/navbar.js" defer></script>
 </head>
-<body>
-    <header class="hero">
-        <img src="../../img/logo_sena.png" />
-        <h1>LEMBO SGAL</h1>
-    </header> <!-- hero -->
+<body class="page">
+    <div class="encabezado"></div>
 
-    <section class="user">
-        <div>
-            <img src="../../img/image_two_slider.jpg" />
-            <a href="../../index.html"><h3>Menú</h3></a>
-        </div>
-        <h2>SADMIN</h2>
-    </section> <!-- user -->
-
-    <main>
-        <div class="container">
-            <h2>Actualizar ciclo de cultivo</h2>
-            <div class="campos">
-                <div class="campos_primarios">
-                    <div>
-                        <p>ID del ciclo de cultivo</p>
-                        <input type="text" class="field">
+    <main class="main">
+        <div class="form-container">
+            <h2 class="form-container__title">Actualizar ciclo de cultivo</h2>
+            <div class="form">
+                <div class="form__fields-primary">
+                    <div class="form__field-group">
+                        <p class="form__label">ID del ciclo de cultivo</p>
+                        <input type="text" class="form__input">
                     </div>
-                    <div>
-                        <p>Ubicación</p>
-                        <input type="text" class="field">
+                    <div class="form__field-group">
+                        <p class="form__label">Ubicación</p>
+                        <input type="text" class="form__input">
                     </div>
-                    <div>
-                        <p>Nombre del ciclo de cultivo</p>
-                        <input type="text" class="field">
+                    <div class="form__field-group">
+                        <p class="form__label">Nombre del ciclo de cultivo</p>
+                        <input type="text" class="form__input">
                     </div>
-                    <div>
-                        <p>Estado</p>
-                        <input type="text" class="field">
+                    <div class="form__field-group">
+                        <p class="form__label">Estado</p>
+                        <input type="text" class="form__input">
                     </div>
-                    <div>
-                        <p>Novedades</p>
-                        <input type="text" class="field">
+                    <div class="form__field-group">
+                        <p class="form__label">Novedades</p>
+                        <input type="text" class="form__input">
                     </div>
-                    <div>
-                        <p>Periodo / fecha inicio</p>
-                        <input type="date" class="field">
+                    <div class="form__field-group">
+                        <p class="form__label">Periodo / fecha inicio</p>
+                        <input type="date" class="form__input">
                     </div>
-                    <div>
-                        <p>Periodo / fecha fin</p>
-                        <input type="date" class="field">
+                    <div class="form__field-group">
+                        <p class="form__label">Periodo / fecha fin</p>
+                        <input type="date" class="form__input">
                     </div>
                 </div>
-                <div>
-                    <div class="field_end">
-                        <p>Descripción</p>
-                        <input type="text" class="field">
+                <div class="form__fields-secondary">
+                    <div class="form__field-group form__field-group--large">
+                        <p class="form__label">Descripción</p>
+                        <input type="text" class="form__input form__input--large">
                     </div>
-                    <a href="confirmar_actualizar_ciclo.html"><button>ACTUALIZAR</button></a>
+                    <a href="confirmar_actualizar_ciclo.html">
+                        <button class="button button--primary">ACTUALIZAR</button>
+                    </a>
                 </div>
             </div>
-        </div> <!-- container -->
+        </div>
     </main>
 
-    <div class="button_end">
-        <a href="tabla_ciclo_cultivo.html"><button class="return" type="submit">VOLVER</button></a>
+    <div class="navigation">
+        <a href="tabla_ciclo_cultivo.html">
+            <button class="button button--return">VOLVER</button>
+        </a>
     </div>
 </body>
 </html>

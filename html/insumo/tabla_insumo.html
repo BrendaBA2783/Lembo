@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insumos</title>
 
+    <!-- Links de css y js -->
     <link rel="stylesheet" href="../../css/styles_tabla.css">
+    <script src="../../components/js/header.js"></script>
+    <script src="../../components/js/section-user.js"></script>
+
     <!-- Tipografia Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +17,17 @@
 
 </head>
 <body>
-    <section class="hero">
-        <img src="../../img/logo_sena.png" />
-        <h1>LEMBO SGAL</h1>
-    </section> <!-- hero -->
+    <!-- Integración del header.html y section-user.html-->
+    <div class="hero"></div>
+    <div class="user"></div>
 
-    <section class="user">
-        <div>
-            <img src="../../img/image_two_slider.jpg" />
-            <a href="../../index.html"><h3>Menú</h3></a>
-        </div>
-        <div class="title_table">
-            <h2>SADMIN</h2>
-            <h2 class="title">Insumos</h2>
-        </div>  
-    </section> <!-- user -->
-
+    <!-- Sección de buscar -->
     <div class="buscar">
         <input type="text" />
         <img src="../../img/icono_lupa.png" />
     </div>
 
+    <!-- Titulo de las columnas de la tabla -->
     <div class="opciones_tabla">
         <a href="id_habilitar_deshabilitar_insumo.html"><h4>Deshabilitar/Habilitar <img src="../../img/icono_flecha.png" /></h4></a>
         <a href="reporte.html"><h4>Descargar <img src="../../img/icono_flecha.png" /></h4></a>

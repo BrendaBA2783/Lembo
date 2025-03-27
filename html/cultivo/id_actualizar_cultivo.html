@@ -5,39 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualizar cultivo</title>
 
-    <link rel="stylesheet" href="../../css/id_actualizar_visualizar.css">
-    <!-- Tipografia Work Sans -->
+    <link rel="stylesheet" href="../../css/cultivo/styles_id_actualizar_cultivo.css">
+    <!-- Tipografía Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../../components/js/navbar.js" defer></script>
 </head>
 <body>
-    <header class="hero">
-        <img src="../../img/logo_sena.png" />
-        <h1>LEMBO SGAL</h1>
-    </header> <!-- hero -->
+    <div class="encabezado"></div>
 
-    <section class="user">
-        <div>
-            <img src="../../img/image_two_slider.jpg" />
-            <a href="../../index.html"><h3>Menú</h3></a>
-        </div>
-        <h2>SADMIN</h2>
-    </section> <!-- user -->
-
-    <main>
-        <div class="container">
-            <h2>Actualización de cultivo</h2>
-            <p>Ingrese el número de identificación del cultivo a actualizar</p>
-            <input type="text" class="field">
-            <div class="button_container">
-                <a href="actualizar_cultivo.html"><button>CONTINUAR</button></a>
+    <main class="main">
+        <div class="main__container">
+            <h2 class="main__title">Actualización de cultivo</h2>
+            <p class="main__description">Ingrese el número de identificación del cultivo a actualizar</p>
+            <input type="text" class="main__field">
+            <div class="main__actions">
+                <a href="actualizar_cultivo.html">
+                    <button class="main__button">CONTINUAR</button>
+                </a>
             </div>
         </div>
     </main>
 
-    <div class="button_end">
-        <a href="tabla_cultivo.html"><button class="return" type="submit">VOLVER</button></a>
+    <div class="button-end">
+        <a href="tabla_cultivo.html">
+            <button class="button-end__return" type="submit">VOLVER</button>
+        </a>
     </div>
 </body>
 </html>

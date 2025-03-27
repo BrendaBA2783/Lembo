@@ -10,68 +10,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../../components/js/navbar.js" defer></script>
 </head>
 <body>
-    <header class="hero">
-        <img src="../../img/logo_sena.png" />
-        <h1>LEMBO SGAL</h1>
-    </header> <!-- hero -->
+    <div class="encabezado"></div>
 
-    <section class="user">
-        <div>
-            <img src="../../img/image_two_slider.jpg" />
-            <a href="../../index.html"><h3>Menú</h3></a>
-        </div>
-        <h2>SADMIN</h2>
-    </section> <!-- user -->
-
-    <main>
-        <div class="container">
-            <h2>Actualizar sensor</h2>
-            <div class="campos">
-                <div class="campos_primarios">
-                    <div>
-                        <p>ID del sensor</p>
-                        <input type="text" class="field">
+    <main class="main">
+        <div class="sensor-form">
+            <h2 class="sensor-form__title">Actualizar sensor</h2>
+            <div class="sensor-form__fields">
+                <div class="sensor-form__primary-fields">
+                    <div class="form-field">
+                        <p class="form-field__label">ID del sensor</p>
+                        <input type="text" class="form-field__input">
                     </div>
-                    <div>
-                        <p>Unidad de medida</p>
-                        <input type="text" class="field">
+                    <div class="form-field">
+                        <p class="form-field__label">Unidad de medida</p>
+                        <input type="text" class="form-field__input">
                     </div>
-                    <div>
-                        <p>Tipo de sensor</p>
-                        <input type="text" class="field">
+                    <div class="form-field">
+                        <p class="form-field__label">Tipo de sensor</p>
+                        <input type="text" class="form-field__input">
                     </div>
-                    <div>
-                        <p>Tiempo escaneo</p>
-                        <input type="text" class="field">
+                    <div class="form-field">
+                        <p class="form-field__label">Tiempo escaneo</p>
+                        <input type="text" class="form-field__input">
                     </div>
-                    <div>
-                        <p>Nombre</p>
-                        <input type="text" class="field">
+                    <div class="form-field">
+                        <p class="form-field__label">Nombre</p>
+                        <input type="text" class="form-field__input">
                     </div>
-                    <div>
-                        <p>Estado</p>
-                        <input type="text" class="field">
+                    <div class="form-field">
+                        <p class="form-field__label">Estado</p>
+                        <input type="text" class="form-field__input">
                     </div>
-                    <div class="campo_descripcion">
-                        <p>Descripción</p>
-                        <input type="text" class="field">
+                    <div class="form-field form-field--description">
+                        <p class="form-field__label">Descripción</p>
+                        <input type="text" class="form-field__input">
                     </div>
                 </div>
-                <div>
-                    <div class="field_end">
-                        <p>Imágen</p>
-                        <input type="text" class="field">
+                <div class="sensor-form__secondary-fields">
+                    <div class="form-field form-field--image">
+                        <p class="form-field__label">Imágen</p>
+                        <input type="text" class="form-field__input">
                     </div>
-                    <a href="confirmar_actualizar_sensor.html"><button>ACTUALIZAR</button></a>
+                    <a href="confirmar_actualizar_sensor.html">
+                        <button class="button button--update">ACTUALIZAR</button>
+                    </a>
                 </div>
             </div>
-        </div> <!-- container -->
+        </div>
     </main>
 
-    <div class="button_end">
-        <a href="tabla_sensor.html"><button class="return" type="submit">CANCELAR</button></a>
+    <div class="button-container button-container--end">
+        <a href="tabla_sensor.html">
+            <button class="button button--cancel" type="submit">CANCELAR</button>
+        </a>
     </div>
 </body>
 </html>

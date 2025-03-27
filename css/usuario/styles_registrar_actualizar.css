@@ -40,49 +40,59 @@ body {
     font-style: normal;
     background: linear-gradient(var(--white), var(--gray_20), var(--gray_40)) no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Headings */
-h1 {font-size: 3.2rem;} h2 {font-size: 2.4rem;} h3 {font-size: 2.0rem;} h4 {font-size: 1.6rem;}
+h1 {font-size: 3.2rem;} 
+h2 {font-size: 2.4rem;} 
+h3 {font-size: 2.0rem;} 
+h4 {font-size: 1.6rem;}
 
 /* Hero */
-.hero {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
     border-bottom: 0.4rem solid var(--primary_green_900);
 }
-.hero__logo {
+.header__logo {
     width: 10rem;
     height: 10rem;
 }
-.hero__title {
+.header__title {
     color: var(--primary_blue_100);
 }
 
 /* User */
-.user {
+.user-panel {
     display: flex;
     gap: 2.4rem;
 }
-.user__image {
+
+.user-panel__image {
     width: 8rem;
     height: 8rem;
     border-radius: 6rem;
 }
-.user__menu-title {
+
+.user-panel__menu-link h3 {
     margin-left: 1.3rem;
     margin-top: 0.4rem;
 }
-.user__name {
-    margin-top:3rem;
+
+.user-panel__role {
+    margin-top: 3rem;
 }
 
 /* Main */
 .main {
     display: flex;
     justify-content: center;
+    flex: 1;
 }
 .main__container {
     display: flex;
@@ -90,24 +100,34 @@ h1 {font-size: 3.2rem;} h2 {font-size: 2.4rem;} h3 {font-size: 2.0rem;} h4 {font
     text-align: center;
     padding: 6rem;
     background-color: var(--white);
-    width: 70%;
+    width: 50vw;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 3px 15px 0px var(--primary_green_900);
     align-items: center;
 }
-.form__fields {
+.main__title {
+    margin-bottom: 2rem;
+}
+.main__campos-primarios {
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.4rem;
 }
-.form__button--button {
-    margin-left: 36rem;
+
+.main__button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
+.main__button-link {
+    margin-right: 0;
+}
+
 /* Campo */
-.form__field {
-    width: 32rem;
+.main__campo-input {
+    width: 100%;
     height: 5.6rem;
     border-radius: 1rem;
     border: none;
@@ -117,7 +137,7 @@ h1 {font-size: 3.2rem;} h2 {font-size: 2.4rem;} h3 {font-size: 2.0rem;} h4 {font
 }
 
 /* Botones */
-button {
+.main__button, .navigation__button {
     width: 32rem;
     height: 4rem;
     border-radius: 1rem;
@@ -127,31 +147,74 @@ button {
     font-weight: bold;
     margin-top: 2.4rem;
 }
-.button-end__return {
+.navigation__button {
     border-bottom: 0.5rem solid var(--white);
 }
-.button-end {
+.navigation {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin-bottom: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
 }
-button:hover {
+.main__button:hover, .navigation__button:hover {
     box-shadow: 0 0.3rem 1rem var(--primary_blue_100);
 }
 
 /* Media */
-@media (max-width: 1064px) {
-    .form__fields {
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-        gap: 2.4rem;
+@media (max-width: 1200px) {
+    .main__campos-primarios {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .form__button--button {
-        margin: 0;
+}
+
+@media (max-width: 768px) {
+    .main__campos-primarios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main__button-container {
+        justify-content: center;
+    }
+    .navigation {
+        justify-content: center;
+    }
+    .main__container{
+        width: 60vw;
+    }
+}
+@media (max-width: 480px) {
+    .main__container {
+        width: 90%;
+    }
+    .main__actions {
+        justify-content: center;
     }
     .button-end {
-    justify-content: center;        
+        justify-content: center;
     }
+    .main__campos-primarios {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 1.4rem;
+    }
+    
+    .main__button {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .main__container {
+        padding: 3rem;
+        height: 180vh;
+    }
+    
+    .main__button{
+        margin-top: 1rem;
+    }
+
+    .navigation {
+        justify-content: center;
+    }
+
+    
 }

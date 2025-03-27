@@ -10,68 +10,62 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../../components/js/navbar.js" defer></script>
 </head>
 <body>
-    <header class="hero">
-        <img src="../../img/logo_sena.png" />
-        <h1>LEMBO SGAL</h1>
-    </header> <!-- hero -->
+    <div class="encabezado"></div>
 
-    <section class="user">
-        <div>
-            <img src="../../img/image_two_slider.jpg" />
-            <a href="../../index.html"><h3>Menú</h3></a>
-        </div>
-        <h2>SADMIN</h2>
-    </section> <!-- user -->
-
-    <main>
-        <div class="container">
-            <h2>Actualizar usuario de LEMBO SGAL</h2>
-            <div class="campos">
-                <div class="campos_primarios">
-                    <div>
-                        <p>Tipo de usuario</p>
-                        <input type="text" class="field">
+    <main class="main">
+        <div class="main__container">
+            <h2 class="main__title">Actualizar usuario de LEMBO SGAL</h2>
+            <div class="main__campos">
+                <div class="main__campos-primarios">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Tipo de usuario</p>
+                        <input type="text" class="main__campo-input">
                     </div>
-                    <div>
-                        <p>Tipo de documento</p>
-                        <input type="text" class="field">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Tipo de documento</p>
+                        <input type="text" class="main__campo-input">
                     </div>
-                    <div>
-                        <p>Nombre</p>
-                        <input type="text" class="field">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Nombre</p>
+                        <input type="text" class="main__campo-input">
                     </div>
-                    <div>
-                        <p>Número de identificación</p>
-                        <input type="text" class="field">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Número de identificación</p>
+                        <input type="text" class="main__campo-input">
                     </div>
-                    <div>
-                        <p>Número telefónico</p>
-                        <input type="text" class="field">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Número telefónico</p>
+                        <input type="text" class="main__campo-input">
                     </div>
-                    <div>
-                        <p>Correo electrónico</p>
-                        <input type="text" class="field">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Correo electrónico</p>
+                        <input type="text" class="main__campo-input">
                     </div>
-                    <div>
-                        <p>Estado</p>
-                        <input type="text" class="field">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Estado</p>
+                        <input type="text" class="main__campo-input">
                     </div>
-                    <div>
-                        <p>Confirmación de correo electrónico</p>
-                        <input type="text" class="field">
+                    <div class="main__campo">
+                        <p class="main__campo-label">Confirmación de correo electrónico</p>
+                        <input type="text" class="main__campo-input">
                     </div>
                 </div>
-                <div>
-                    <a href="confirmar_actualizar_usuario.html"><button>ACTUALIZAR</button></a>
+                <div class="main__button-container">
+                    <a href="confirmar_actualizar_usuario.html" class="main__button-link">
+                        <button class="main__button">ACTUALIZAR</button>
+                    </a>
                 </div>
             </div>
-        </div> <!-- container -->
+        </div>
     </main>
 
-    <div class="button_end">
-        <a href="tabla_usuario.html"><button class="return" type="submit">CANCELAR</button></a>
+    <div class="navigation">
+        <a href="tabla_usuario.html" class="navigation__link">
+            <button class="navigation__button" type="submit">CANCELAR</button>
+        </a>
     </div>
 </body>
 </html>

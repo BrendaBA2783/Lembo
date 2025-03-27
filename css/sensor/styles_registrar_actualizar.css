@@ -45,94 +45,99 @@ body {
 /* Headings */
 h1 {font-size: 3.2rem;} h2 {font-size: 2.4rem;} h3 {font-size: 2.0rem;} h4 {font-size: 1.6rem;}
 
-/* Hero */
-.hero {
+/* Header */
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
     border-bottom: 0.4rem solid var(--primary_green_900);
 }
-.hero__logo {
+.header__logo {
     width: 10rem;
     height: 10rem;
 }
-.hero__title {
+.header__title {
     color: var(--primary_blue_100);
 }
 
-/* User */
-.user {
+/* User Section */
+.user-panel {
     display: flex;
     gap: 2.4rem;
 }
-.user__image {
+
+.user-panel__image {
     width: 8rem;
     height: 8rem;
     border-radius: 6rem;
 }
-.user__menu-title {
+
+.user-panel__menu-link h3 {
     margin-left: 1.3rem;
     margin-top: 0.4rem;
 }
-.user__name {
-    margin-top:3rem;
-}
 
+.user-panel__role {
+    margin-top: 3rem;
+}
 /* Main */
 .main {
     display: flex;
     justify-content: center;
 }
-.main__container {
+.sensor-form {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 6rem;
     background-color: var(--white);
-    width: 90%;
+    width: 65vw;
     height: auto;
     border-radius: 1rem;
     box-shadow: 0px 3px 15px 0px var(--primary_green_900);
     align-items: center;
 }
-.main__title {
+.sensor-form__title {
     margin-bottom: 4rem;
 }
-.form {
-    display: flex;
-    gap: 2.4rem;
-}
-.form__fields {
+.sensor-form__primary-fields {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     gap: 2.4rem;
 }
-.form div {
+.sensor-form__fields {
+    display: flex;
+    gap: 2.4rem;
+}
+
+/* Form Field */
+.form-field {
     text-align: start;
 }
-.form__label {
-    margin-top: 1rem;
-}
-/* Campo */
-.form__field {
+.form-field__input {
     width: 32rem;
     height: 5.6rem;
     border-radius: 1rem;
     border: none;
     background-color: var(--gray_20);
     box-shadow: 0rem 0.5rem 0.8rem var(--gray_40);
-    margin-bottom: 0;
+    margin-bottom: 4rem;
 }
-.group__field {
+.form-field__label {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.form-field--image .form-field__input {
     height: 20rem;
     margin-bottom: 30rem;
 }
-.form__group--description .form__field {
+.form-field--description .form-field__input {
     height: 15rem;
 }
-/* Botones */
-button {
+
+/* Buttons */
+.button {
     width: 32rem;
     height: 4rem;
     border-radius: 1rem;
@@ -142,47 +147,53 @@ button {
     font-weight: bold;
     margin-top: 2.4rem;
 }
-.button-end__return {
+.button:hover {
+    box-shadow: 0 0.3rem 1rem var(--primary_blue_100);
+}
+.button--cancel {
     border-bottom: 0.5rem solid var(--white);
 }
-.button-end {
+.button-container--end {
     display: flex;
     justify-content: end;
     margin-bottom: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
 }
-button:hover {
-    box-shadow: 0 0.3rem 1rem var(--primary_blue_100);
+.button--update{
+    margin-top: 10rem;
+    margin-left: 3rem;
 }
 
-/* Media */
+/* Media Queries */
 @media (max-width: 1200px) {
-    .form {
+    .sensor-form__fields {
         display: block;
     }
-    .group__field {
+    .form-field--image .form-field__input {
         margin-bottom: 4rem;
     }
-    .form__end--button {
+    .sensor-form__secondary-fields a .button {
         margin-left: 45rem;
     }
 }
-@media (max-width: 980px) {
-    .form__end--button {
-        margin-left: 35rem;
+@media (max-width: 480px) {
+    .sensor-form{
+        width: 85vw;
+        height: 199vh;
     }
 }
 @media (max-width: 800px) {
-    .form__fields {
+
+    .sensor-form__primary-fields {
         display: grid;
         grid-template-columns: repeat(1, 2fr);
         gap: 1.4rem;
     }
-    .form__end--button {
+    .sensor-form__secondary-fields a .button {
         margin-left: 0rem;
     }
-    .button-end {
+    .button-container--end {
         justify-content: center;
     }
 }
