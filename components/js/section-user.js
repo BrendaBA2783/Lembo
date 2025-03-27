@@ -1,6 +1,6 @@
 // footer.js
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("../components/section-user.html")
+    fetch("/components/section-user.html")
     .then(response => response.text())
     .then(data => {
         document.querySelector(".user").innerHTML = data; 

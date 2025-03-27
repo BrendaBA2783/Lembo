@@ -1,6 +1,6 @@
 // from/usuarios
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("../components/from.html")
+    fetch("/components/from.html")
     .then(response => response.text())
     .then(data => {
         document.querySelector(".userFrom").innerHTML = data; 

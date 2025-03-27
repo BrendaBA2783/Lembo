@@ -4,7 +4,7 @@
     --primary-green-900: #4BBD17;
     --primary-blue-100: #00304D;
 
-    /* Secondary color */
+    /* Secundary color */
     --secondary-green-200: #C9E8B9;
     --secondary-green-950: #39A900;
 
@@ -16,21 +16,13 @@
 }
 
 /* Estilo global */
-* {
-    text-decoration: none;
-}
-
-a {
-    color: var(--black);
-}
+*{text-decoration: none;} a{color: var(--black);}
 
 /* Hack rem */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-}
-
-*, *:before, *:after {
+}*, *:before, *:after {
     box-sizing: inherit;
 }
 
@@ -45,47 +37,45 @@ body {
 }
 
 /* Headings */
-h1 {font-size: 3.2rem;} 
-h2 {font-size: 2.4rem;} 
-h3 {font-size: 2.0rem;} 
-h4 {font-size: 1.6rem;}
+h1 {font-size: 3.2rem;} h2{font-size: 2.4rem;} h3{font-size: 2.0rem;} h4{font-size: 1.6rem;}
 
 /* Header */
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 3rem;
     border-bottom: 0.4rem solid var(--primary-green-900);
 }
-
-.header__logo {
+.hero__logo {
     width: 10rem;
     height: 10rem;
 }
-
-.header__title {
+.hero__title {
     color: var(--primary-blue-100);
 }
 
-/* User Panel */
-.user-panel {
+/* User */
+.user {
     display: flex;
     gap: 2.4rem;
 }
-
-.user-panel__image {
+.user__image-container {
+    display: flex;
+}
+.user__image {
     width: 8rem;
     height: 8rem;
     border-radius: 6rem;
 }
-
-.user-panel__menu-link h3 {
+.user__menu-link {
     margin-left: 1.3rem;
     margin-top: 0.4rem;
 }
-
-.user-panel__role {
+.user__menu-title {
+    margin: 0;
+}
+.user__name {
     margin-top: 3rem;
 }
 
@@ -134,8 +124,8 @@ h4 {font-size: 1.6rem;}
     margin-bottom: 4rem;
 }
 
-/* Buttons */
-.main__button, .button-end__return {
+/* Estilos generales de los botones */
+button {
     width: 32rem;
     height: 4rem;
     border-radius: 1rem;
@@ -144,23 +134,18 @@ h4 {font-size: 1.6rem;}
     color: var(--white);
     font-weight: bold;
     margin-top: 2.4rem;
-    justify-content: center;
 }
-
-.button-end__return {
-    border-bottom: 0.5rem solid var(--white);
-    margin-top: 20rem;
-}
-
 .button-end {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     margin-bottom: 2rem;
     margin-right: 2rem;
-    margin-top: 2rem;
+    margin-top: 7.2rem;
 }
-
-.main__button:hover, .button-end__return:hover {
+.button-end__return {
+    box-shadow: 0 0.3rem 1rem var(--white);
+}
+button:hover {
     box-shadow: 0 0.3rem 1rem var(--primary-blue-100);
 }
 

@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciclo de cultivo</title>
 
+    <!-- Links de css y js -->
     <link rel="stylesheet" href="../../css/styles_tabla.css">
+    <script src="../../components/js/header.js"></script>
+    <script src="../../components/js/section-user.js"></script>
+
     <!-- Tipografia Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,27 +17,20 @@
 
 </head>
 <body>
-    <section class="hero">
-        <img src="../../img/logo_sena.png" />
-        <h1>LEMBO SGAL</h1>
-    </section> <!-- hero -->
+    <!-- Integrando el header.html y section-user.html -->
+    <div class="hero"></div>
+    <div class="user"></div>
 
-    <section class="user">
-        <div>
-            <img src="../../img/image_two_slider.jpg" />
-            <a href="../../index.html"><h3>Menú</h3></a>
-        </div>
-        <div class="title_table">
-            <h2>SADMIN</h2>
-            <h2 class="title">Ciclo cultivo</h2>
-        </div>  
-    </section> <!-- user -->
+    <!-- Título de la tabla -->
+    <h2>Ciclos de cultivo</h2>
 
+    <!-- Sección de búsqueda -->
     <div class="buscar">
         <input type="text" />
         <img src="../../img/icono_lupa.png" />
     </div>
 
+    <!-- Opciones -->
     <div class="opciones_tabla">
         <a href="../ciclo_cultivo/id_ciclo_habilitar_deshabilitar.html"><h4>Deshabilitar/Habilitar <img src="../../img/icono_flecha.png" /></h4></a>
         <a href="reporte.html"><h4>Descargar <img src="../../img/icono_flecha.png" /></h4></a>
@@ -41,8 +38,45 @@
         <a href="filtro.html"><img src="../../img/icono_filtro.png" /></a>
     </div>
 
+    <!-- Tabla -->
     <main>
-        <div class="filas">
+        <div>
+            <table>
+                <tr>
+                    <th class="sombra_superior campo_id">ID CICLO</th>
+                    <th class="sombra_superior campo_tipo">TIPO CICLO</th>
+                    <th class="sombra_superior campo_nombre">NOMBRE</th>
+                    <th class="sombra_superior campo_tamaño">TAMAÑO</th>
+                    <th class="sombra_superior campo_descripcion">DESCRIPCIÓN</th>
+                    <th class="sombra_superior campo_imagen">IMÁGEN</th>
+                </tr>
+                <tr>
+                    <td class="campo">01</td>
+                    <td class="campo">Café</td>
+                    <td class="campo">Café</td>
+                    <td class="campo">24H</td>
+                    <td class="campo">Ciclo de café que Lptate</td>
+                    <td class="campo">image</td>
+                </tr>
+                <tr>
+                    <td class="campo">01</td>
+                    <td class="campo">Café</td>
+                    <td class="campo">Café</td>
+                    <td class="campo">24H</td>
+                    <td class="campo">Ciclo de café que Lptate</td>
+                    <td class="campo">image</td>
+                </tr>
+                <tr>
+                    <td class="campo">01</td>
+                    <td class="campo">Café</td>
+                    <td class="campo">Café</td>
+                    <td class="campo">24H</td>
+                    <td class="campo">Ciclo de café que Lptate</td>
+                    <td class="campo">image</td>
+                </tr>
+            </table>
+        </div>
+        <!-- <div class="filas">
             <div class="sombra_superior campo_id">
                 <h4>ID CICLO</h4>
             </div>
@@ -61,9 +95,9 @@
             <div class="sombra_superior campo_imagen">
                 <h4>IMÁGEN CICLO</h4>
             </div>
-        </div> <!-- filas -->
+        </div> --> <!-- filas -->
 
-        <div class="filas_vacias">
+        <!-- <div class="filas_vacias">
             <div class="campo campo_vacio_id"></div>
             <div class="campo"></div>
             <div class="campo"></div>
@@ -110,8 +144,8 @@
             <div class="sombras_inferior campo"></div>
             <div class="sombras_inferior campo"></div>
             <div class="sombras_inferior campo campo_vacio_imagen"></div>
-        </div>
-    </main>
+        </div>-->
+    </main> 
 
     <div class="button_end">
         <a href="registrar_ciclo.html"><button class="return" type="submit">REGISTRAR</button></a>
