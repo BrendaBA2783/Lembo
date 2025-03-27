@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar sesión</title>
 
+    <!-- Links de css y js -->
     <link rel="stylesheet" href="../css/styles_login.css">
+    <script src="../components/js/header.js"></script>
+
     <!-- Tipografia Work Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="hero">
-        <img class="hero__logo" src="../img/logo_sena.png" />
-        <h1 class="hero__title">LEMBO SGAL</h1>
-    </header>
+    <!-- Integración del header.html -->
+    <div class="hero"></div>
 
+    <!-- Main -->
     <main class="main">
         <div class="main__container">
             <h3 class="main__title">Inicio de sesión</h3>
@@ -24,41 +26,23 @@
             <div class="main__group">
                 <h4 class="main__label">Correo electrónico</h4>
                 <input class="main__field" type="text" />
-            </div>
+            </div><!-- main__group -->
             <div class="main__group">
                 <h4 class="main__label">Contraseña</h4>
                 <input class="main__field" type="password" />
-            </div>
+            </div><!-- main__group -->
 
-            <a href="password_one.html"><h4 class="main__password--link">¿Olvidaste tu contraseña?</h4></a>
+            <!-- enlace de recirección a recuperar contraseña -->
+            <a href="password.html"><h4 class="main__password--link">¿Olvidaste tu contraseña?</h4></a>
 
+            <!-- botón de inicio de sesión -->
             <a href="home_before.html"><button>INICIAR SESIÓN</button></a>
-        </div>
+        </div><!-- main__container -->
     </main>
 
+    <!-- sección de botón final, retroceder -->
     <div class="button-end">
         <a href="../index.html"><button class="button-end__return" type="submit">VOLVER</button></a>
     </div>
-    
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

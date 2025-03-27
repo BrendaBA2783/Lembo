@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEMBO SGAL</title>
 
+    <!-- Links de css y js -->
     <link rel="stylesheet" href="styles.css">
+    <script src="components/js/header.js"></script>
+
     <!-- Tipografia Work Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
+    <!-- Integración del header.html -->
     <div class="hero"></div>
 
+    <!-- Slider -->
     <section class="slider">
         <section class="slider__frame">
             <ul class="list">
@@ -26,6 +31,7 @@
         </section>
     </section>
     
+    <!-- Main -->
     <main class="see">
         <a class="see__link" href="html/login.html"><button>INICIAR SESIÓN</button></a>
         
@@ -37,7 +43,7 @@
             <div class="container-information">
                 <button class="container-information__button" type="submit">VER</button>
             </div>
-        </div>
+        </div><!-- see__information -->
 
         <div class="see__information">
             <div class="container-information">
@@ -47,9 +53,10 @@
             <div class="container-information">
                 <button class="container-information__button" type="submit">VER</button>
             </div>
-        </div>
+        </div><!-- see__information -->
     </main>
 
+    <!-- Footer personalizado del index.html -->
     <footer class="footer">
         <p class="footer__paragraph">Contacto</p>
         <img class="footer__icon" src="img/logo_facebook.png" />
